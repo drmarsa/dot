@@ -1,3 +1,14 @@
 [user]
 	email = dennis.marsa@gmail.com
 	name = Dennis Marsa
+[alias]
+	amend = commit --amend
+	l = log --name-status
+	lg = log --name-status --graph
+	p = pull
+	pr = pull --rebase
+	r = rebase
+	ra = rebase --abort
+	rc = rebase --continue
+	ri = rebase --interactive
+	s = status
