@@ -12,3 +12,4 @@
 	rc = rebase --continue
 	ri = rebase --interactive
 	s = status
+	d = diff
