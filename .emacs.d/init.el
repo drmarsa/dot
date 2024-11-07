@@ -59,6 +59,11 @@
 ;***********************************************************************
 (put 'narrow-to-region 'disabled nil)
 
+(require 'eglot)
+(add-to-list 'eglot-server-programs '((c-mode c++-mode) . ("clangd" "-j=4")))
+(add-hook 'c-mode-hook 'eglot-ensure)
+(add-hook 'c++-mode-hook 'eglot-ensure)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -74,6 +79,7 @@
  '(line-number-mode nil)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
+ '(package-selected-packages '(realgud-lldb realgud company eglot))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil))

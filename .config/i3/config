@@ -60,7 +60,7 @@ bindsym $mod+t exec gnome-terminal
 bindsym $mod+e exec emacs
 
 # start a browser
-bindsym $mod+b exec firefox
+bindsym $mod+b exec brave-browser
 
 # kill focused window
 bindsym $mod+Shift+k kill

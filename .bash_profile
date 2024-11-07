@@ -6,13 +6,13 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # Export all variables
-set - a
+set -a
 
 # User specific environment
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 EDITOR=vi
 PAGER=less
-LESS="crMS --use-color"
+LESS="crMSR --use-color"
 
 PS1="\u@\h:\w% "
